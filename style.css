@@ -1,0 +1,49 @@
+a {
+    text-decoration: none;
+}
+
+ul, 
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    max-width: 1024px;
+    margin: auto;
+}
+
+/* HEADER STYLES */
+
+.header {
+    background: #fff;
+    padding: 20px 15px;
+}
+
+.header__main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__nav {
+    margin-left: auto;
+}
+
+.header__menu {
+    display: flex;
+}
+.header__menu-link {
+    display: block;
+    padding: 10px 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #454545;
+}
