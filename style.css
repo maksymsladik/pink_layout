@@ -1,3 +1,19 @@
+@font-face {
+	font-family: 'segoeui';
+	src: url("SegoeUI-Light.eot");
+	src: local("Segoe UI Light"), local("SegoeUI-Light"),
+		url("libs/segoeui/SegoeUI-Light.eot?#iefix") format("embedded-opentype"),
+		url("libs/segoeui/SegoeUI-Light.woff") format("woff"),
+		url("libs/segoeui/SegoeUI-Light.ttf") format("truetype");
+	font-weight: 400;
+	font-style: normal;
+}
+
+a,
+button {
+    font-family: "segoeui";
+}
+
 a {
     text-decoration: none;
 }
@@ -16,6 +32,11 @@ li {
     list-style: none;
 }
 
+body {
+    background: url(img/bg-header.png) no-repeat;
+    background-size: cover;
+}
+
 .container {
     max-width: 1024px;
     margin: auto;
@@ -24,8 +45,9 @@ li {
 /* HEADER STYLES */
 
 .header {
-    background: #fff;
+    background: #ffffffe6;
     padding: 20px 15px;
+    box-shadow: 0 1px 4px #00000057;
 }
 
 .header__main {
@@ -40,10 +62,41 @@ li {
 
 .header__menu {
     display: flex;
+    margin-right: 40px;
 }
 .header__menu-link {
     display: block;
     padding: 10px 18px;
-    font-family: Arial, Helvetica, sans-serif;
     color: #454545;
+    font-weight: bold;
+    font-size: 17px;
+    opacity: 0.75;
+}
+
+.header__menu-item:last-child .header__menu-link{
+    padding-right: 0;
+}
+
+.header__login {
+    border: none;
+    background: #d3756f;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 3px;
+    font-weight: 600;
+    font-size: 17px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.header__login-icon {
+    margin-right: 5px;
+}
+
+.header__menu-link:hover {
+    text-decoration: underline;
+}
+
+.header__login:hover {
+    background: #b85663;
 }
