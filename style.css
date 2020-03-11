@@ -33,7 +33,7 @@ li {
 }
 
 body {
-    background: url(img/bg-header.png) no-repeat;
+    background: url(img/bg-header.png) no-repeat center;
     background-size: cover;
 }
 
@@ -99,4 +99,60 @@ body {
 
 .header__login:hover {
     background: #b85663;
+}
+
+/* BANNER STYLES */
+
+.banner {
+    text-align: center;
+    color: white;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    margin-top: 20%;
+    margin-bottom: 85px;
+}
+
+.banner__main {
+    font-size: 70px;
+    text-transform: uppercase;
+    margin: 0 0 18px 0;
+}
+
+.banner__text {
+    font-size: 25px;
+    margin: 0;
+    font-weight: normal;
+}
+
+/* MEDIA */
+
+@media(max-width: 740px){
+    .header__main,
+    .header__menu {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .header__menu,
+    .header__nav {
+        margin: auto;
+    }
+
+    .header__menu-item:last-child .header__menu-link {
+        padding-right: 18px;
+    }
+
+    .banner {
+        margin-top: 3%;
+        margin-bottom: 22px;
+        padding: 0 15px;
+    }
+    
+    .banner__main {
+        font-size: 30px;
+        margin: 0 0 10px 0;
+    }
+    
+    .banner__text {
+        font-size: 18px;
+    }
 }
