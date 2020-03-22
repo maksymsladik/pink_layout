@@ -2,7 +2,7 @@
 
 @media(max-width: 1200px){
     .banner {
-        margin: 185px;
+        margin-top: 185px;
     }
 
     .content {
@@ -12,7 +12,7 @@
 
 @media(max-width: 950px){
     .banner {
-        margin: 110px;
+        margin-top: 110px;
     }
 
     .banner__main {
@@ -25,6 +25,12 @@
 
     .banner-content__main {
         padding: 15px 0;
+    }
+}
+
+@media(max-width: 800px){
+    .footer__menu-wrap {
+        margin-top: 15px;
     }
 }
 
@@ -74,6 +80,18 @@
     .article__block { 
         padding: 0;
         margin-top: 15px;
+    }
+    
+    .footer {
+        padding: 0;
+    }
+
+    .footer__menu-wrap {
+        margin-right: 20px;
+    }
+
+    .footer__social-link {
+        margin-right: 15px;
     }
 
     .article {
